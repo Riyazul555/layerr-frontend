@@ -25,7 +25,7 @@ const menuData: Menu[] = [
     path: "/contact",
     newTab: false,
   },
-  {
+  /* {
     id: 4,
     title: "Pages",
     newTab: false,
@@ -79,6 +79,6 @@ const menuData: Menu[] = [
         newTab: false,
       },
     ],
-  },
+  }, */
 ];
 export default menuData;

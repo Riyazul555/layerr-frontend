@@ -23,12 +23,10 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
-      <Brands />
-      <AboutSectionOne />
       <AboutSectionTwo />
+      <AboutSectionOne />
       <Testimonials />
-      <Pricing />
+      <Pricing/>
       <Blog />
       <Contact />
     </>

@@ -110,10 +110,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="/pricing"
+                      href="/contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      Contact
                     </a>
                   </li>
                   <li>
@@ -150,14 +150,14 @@ const Footer = () => {
                       Privacy Policy
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Refund Policy
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

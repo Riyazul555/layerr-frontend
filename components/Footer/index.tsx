@@ -22,7 +22,7 @@ const Footer = () => {
                     height={30}
                   />
                   <Image
-                    src="/images/logo/layerr.png"
+                    src="/images/logo/layerrdark.png"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}

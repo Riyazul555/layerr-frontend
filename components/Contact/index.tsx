@@ -56,42 +56,50 @@ const Contact = () => {
               </p>
               <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
-                  {['name', 'email', 'industry', 'companyName', 'message'].map((field) => (
-                    <div
-                      key={field}
-                      className={`w-full px-4 ${field !== 'message' ? 'md:w-1/2' : ''}`}
-                    >
-                      <div className="mb-8">
-                        <label
-                          htmlFor={field}
-                          className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                        >
-                          {field === 'message' ? 'Your Message' : `Your ${field.charAt(0).toUpperCase() + field.slice(1)}`}
-                        </label>
-                        {field === 'message' ? (
-                          <textarea
-                            id={field}
-                            name={field}
-                            rows={5}
-                            placeholder={`Enter your ${field}`}
-                            value={formData[field as keyof typeof formData]}
-                            onChange={handleChange}
-                            className="w-full resize-none rounded-sm border px-6 py-3 text-base outline-none focus:border-primary"
-                          />
-                        ) : (
-                          <input
-                            type={field === 'email' ? 'email' : 'text'}
-                            id={field}
-                            name={field}
-                            placeholder={`Enter your ${field}`}
-                            value={formData[field as keyof typeof formData]}
-                            onChange={handleChange}
-                            className="w-full rounded-sm border px-6 py-3 text-base outline-none focus:border-primary"
-                          />
-                        )}
+                  {["name", "email", "industry", "companyName", "message"].map(
+                    (field) => (
+                      <div
+                        key={field}
+                        className={`w-full px-4 ${
+                          field !== "message" ? "md:w-1/2" : ""
+                        }`}
+                      >
+                        <div className="mb-8">
+                          <label
+                            htmlFor={field}
+                            className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                          >
+                            {field === "message"
+                              ? "Your Message"
+                              : `Your ${
+                                  field.charAt(0).toUpperCase() + field.slice(1)
+                                }`}
+                          </label>
+                          {field === "message" ? (
+                            <textarea
+                              id={field}
+                              name={field}
+                              rows={5}
+                              placeholder={`Enter your ${field}`}
+                              value={formData[field as keyof typeof formData]}
+                              onChange={handleChange}
+                              className="mb-4 w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                            />
+                          ) : (
+                            <input
+                              type={field === "email" ? "email" : "text"}
+                              id={field}
+                              name={field}
+                              placeholder={`Enter your ${field}`}
+                              value={formData[field as keyof typeof formData]}
+                              onChange={handleChange}
+                              className="mb-4 w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                            />
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ),
+                  )}
                   <div className="w-full px-4">
                     <button
                       type="submit"
@@ -102,7 +110,11 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
-              {status && <p className="mt-4 text-base font-medium text-red-500">{status}</p>}
+              {status && (
+                <p className="mt-4 text-base font-medium text-red-500">
+                  {status}
+                </p>
+              )}
             </div>
           </div>
           {/* NewsLatterBox */}

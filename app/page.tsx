@@ -13,7 +13,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Layerr AI",
-  description: "This is Home for Startup Nextjs Template",
+  description: "This is Layerr AI",
   // other metadata
 };
 
